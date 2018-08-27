@@ -4,6 +4,12 @@ this little worker will perform some management tasks for [my blog](https://shat
 
 ## setup
 
+- go to [tumblr api console](https://api.tumblr.com/console)
+- create an app and retrieve consumer credentials
+- return to the tumblr api console
+- provide consumer credentials to obtain oauth tokens
+- then:
+
 ```bash
 pip install virtualenv
 virtualenv env
