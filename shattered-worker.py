@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import json
+import pytumblr
 
 
 def hyperworker():
@@ -17,7 +18,8 @@ def hyperworker():
     config['oauth_secret']
   )
   
-  client.info()
+  print('{0!s} drafts'.format(len(tumblr.drafts('shatteredcontinuum')['posts'])))
+  print('{0!s} enqueued'.format(len(tumblr.queue('shatteredcontinuum')['posts'])))
 
 
 def get_config():
